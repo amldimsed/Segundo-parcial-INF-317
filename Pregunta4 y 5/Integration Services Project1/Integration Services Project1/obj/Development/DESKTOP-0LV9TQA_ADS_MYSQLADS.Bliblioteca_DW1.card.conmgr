@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-0LV9TQA_ADS_MYSQLADS.Bliblioteca_DW1.card"
+  DTS:DTSID="{BED1C683-92C7-48BA-B6BE-5FF9F1514804}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-0LV9TQA\ADS_MYSQLADS;User ID=card;Initial Catalog=Bliblioteca_DW1;Persist Security Info=True;Application Name=SSIS-Integration Services Project1-{BED1C683-92C7-48BA-B6BE-5FF9F1514804}DESKTOP-0LV9TQA\ADS_MYSQLADS.Bliblioteca_DW1.card;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdJ/a8LXbcUqHbvjG7GMX4gAAAAACAAAAAAAQZgAAAAEAACAAAAAiFQIYyj4QoyB/1BrXk8wQGXA1g6p/lCxiahG10QBMwQAAAAAOgAAAAAIAACAAAADJ6/+o4a6+2WepXVd3g3jCnxYw9GgeyAsX9oNKawxLBoAAAAD4NfxIVWFDTZk+o8kY7eDnNBWZt5SjYIuca7KwebAHUxoV5IsolZ/NEhx2M7ARV0HZAeOCZSss3B5qKd4tFynGmqVo6ql3Go5VCZT7sAFb2DGom+9/y1mK1QWCHzgWAe14j6VVa0q9qXY1J6Mr2jQqi2zTnjuQq4razfREN4I7xkAAAADwO9x/y5jgofrP2VWcBqD4ZRrXee/VEyaM523+Hm/DC6YQZRm4M3VFUUlYUCPG7JRB5wAVLcdAtPddngO/2BFC</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
