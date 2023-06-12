@@ -1,0 +1,116 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a4113037-1a1c-4e9a-b30d-6e76c19254d0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Bliblio Datawarehouse</ID>
+  <Name>Bliblio Datawarehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Bliblio Datawarehouse</DataSourceID>
+  <Schema>
+    <xs:schema id="Bliblio_x0020_Datawarehouse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Bliblio_x0020_Datawarehouse" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="251aef91-5589-4cd6-b87e-4d11047b3ddc">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Libros" msprop:design-time-name="554f954a-c895-4a37-880e-cc55a072f738" msprop:DbTableName="Libros" msprop:FriendlyName="Libros" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="4fad15ec-facc-4307-9f12-d888bb36df09" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="titulo" msprop:design-time-name="a6a07d3a-d428-44c1-9757-920aba1e5f39" msprop:DbColumnName="titulo" msprop:FriendlyName="titulo">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="autor_id" msprop:design-time-name="b961d058-5086-497a-8be3-d2b596eb7ea1" msprop:DbColumnName="autor_id" msprop:FriendlyName="autor_id" type="xs:int" />
+                  <xs:element name="anio_publicacion" msprop:design-time-name="f9bef6fa-5967-4890-a953-2f830b45cc2e" msprop:DbColumnName="anio_publicacion" msprop:FriendlyName="anio_publicacion" type="xs:dateTime" />
+                  <xs:element name="genero_id" msprop:design-time-name="a4c44091-b7e3-4dcf-ba4d-6fe4a6c4bbc4" msprop:DbColumnName="genero_id" msprop:FriendlyName="genero_id" type="xs:int" />
+                  <xs:element name="editorial_id" msprop:design-time-name="08be78d1-eb49-4efd-9591-fb556d644065" msprop:DbColumnName="editorial_id" msprop:FriendlyName="editorial_id" type="xs:int" />
+                  <xs:element name="estante_id" msprop:design-time-name="6bf90383-dd68-4c1b-ab54-0a60b5872a74" msprop:DbColumnName="estante_id" msprop:FriendlyName="estante_id" type="xs:int" />
+                  <xs:element name="categoria_id" msprop:design-time-name="40b0301b-8075-4584-b5a4-d02db6ac02fb" msprop:DbColumnName="categoria_id" msprop:FriendlyName="categoria_id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Estantes" msprop:design-time-name="96d544c4-eadb-4894-8dab-f2bb22e247fd" msprop:DbTableName="Estantes" msprop:FriendlyName="Estantes" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="50e74386-edd9-48be-b073-01797914dc57" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="numero" msprop:design-time-name="eedbf0a2-89b2-4ecf-b646-6f8268541646" msprop:DbColumnName="numero" msprop:FriendlyName="numero" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Generos" msprop:design-time-name="ef0c11a4-d815-4a29-a4e3-6202666e74b1" msprop:DbTableName="Generos" msprop:FriendlyName="Generos" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="3bab27b0-379f-420b-83a5-559683466b19" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="nombre" msprop:design-time-name="63f79320-c7aa-470a-aac3-df5a0d9bc952" msprop:DbColumnName="nombre" msprop:FriendlyName="nombre">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Libros" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Estantes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Estantes" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Generos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Generos" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:keyref name="FK__Libros__estante___34C8D9D1" refer="dbo_Estantes_Constraint1">
+          <xs:selector xpath=".//dbo_Libros" />
+          <xs:field xpath="estante_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__Libros__genero_i__35BCFE0A" refer="dbo_Generos_Constraint1">
+          <xs:selector xpath=".//dbo_Libros" />
+          <xs:field xpath="genero_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Bliblio_x0020_Datawarehouse xmlns="" />
+  </Schema>
+</DataSourceView>
